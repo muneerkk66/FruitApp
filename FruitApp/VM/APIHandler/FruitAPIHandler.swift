@@ -34,7 +34,7 @@ struct FruitAPIHandler {
 // MARK: - Headlines endpoint
 extension FruitAPIHandler {
     static func get<T: Decodable>(endpoint: String, type: T.Type, _ completion: @escaping (T?, APIError?) -> ()) {
-        guard let url = URL(string: Application.Configuration.baseURL(path: endpoint)) else {
+        guard let url = URL(string: AppConstants.Configuration.baseURL(path: endpoint)) else {
             completion(nil, APIError.generic("Invalid API"))
             return
         }

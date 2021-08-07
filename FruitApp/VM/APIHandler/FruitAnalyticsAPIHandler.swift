@@ -35,7 +35,7 @@ class FruitAnalyticsSessionManager {
     
     // MARK: - Initialisation
     private init() {
-        self.baseURL = URL(string: Application.Configuration.baseURL(path: "stats"))!
+        self.baseURL = URL(string: AppConstants.Configuration.baseURL(path: "stats"))!
         operationQueue.maxConcurrentOperationCount = 1
     }
     

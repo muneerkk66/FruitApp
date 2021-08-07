@@ -7,11 +7,11 @@
 
 import Foundation
 
-struct Application {
+struct AppConstants {
     
 }
 
-extension Application {
+extension AppConstants {
     enum AppConfiguration: Int {
         case Debug
         case TestFlight
