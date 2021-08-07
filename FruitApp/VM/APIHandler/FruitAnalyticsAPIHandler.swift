@@ -7,9 +7,9 @@
 
 import Foundation
 
-struct BBCAnalytics {
+struct FruitAnalytics {
     static func trackEvent(event: EventType, metaData: [EventProperty]) {
-        let event = BBCAnalyticsEvent(event: event, metaData: metaData, date: Date())
+        let event = FruitsAnalyticsEvent(event: event, metaData: metaData, date: Date())
         FruitAnalyticsSessionManager.shared.queueEvent(event)
     }
     
@@ -29,7 +29,7 @@ class FruitAnalyticsSessionManager {
     
     // MARK: - Operation queue to help batch upload data
     private let operationQueue = OperationQueue()
-    private var queue = Queue<BBCAnalyticsEvent>()
+    private var queue = Queue<FruitsAnalyticsEvent>()
     
     private var timer: Timer?
     
@@ -40,7 +40,7 @@ class FruitAnalyticsSessionManager {
     }
     
     // MARK: - Public methods
-    func queueEvent(_ event: BBCAnalyticsEvent) {
+    func queueEvent(_ event: FruitsAnalyticsEvent) {
         queue.enqueue(event)
     }
     
@@ -64,7 +64,7 @@ class FruitAnalyticsSessionManager {
     
     // MARK: - Private methods
     private let syncQueue = DispatchQueue(label: "uk.co.bbc.background.queue.sync", attributes: .concurrent)
-    private var synchingQueue = [BBCAnalyticsEvent]()
+    private var synchingQueue = [FruitsAnalyticsEvent]()
     @objc private func executeSync() {
         self.syncQueue.sync {
             if queue.isEmpty() == false {
@@ -152,7 +152,7 @@ class PushAnalyticsOperation : Operation {
     override var isExecuting: Bool { return state == .executing }
     override var isFinished: Bool { return state == .finished }
     
-    init(session: URLSession, request: URLRequest, event: BBCAnalyticsEvent, completion: ((BBCAnalyticsEvent, Data?, URLResponse?, Error?) -> (Void))?) {
+    init(session: URLSession, request: URLRequest, event: FruitsAnalyticsEvent, completion: ((FruitsAnalyticsEvent, Data?, URLResponse?, Error?) -> (Void))?) {
         super.init()
         
         task = session.dataTask(with: request, completionHandler: { [weak self] (data, response, error) in

@@ -13,7 +13,7 @@
 		E83CE24B26BDB082004A2C23 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E83CE24926BDB082004A2C23 /* Main.storyboard */; };
 		E83CE24D26BDB084004A2C23 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E83CE24C26BDB084004A2C23 /* Assets.xcassets */; };
 		E83CE25026BDB084004A2C23 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E83CE24E26BDB084004A2C23 /* LaunchScreen.storyboard */; };
-		E83CE25B26BDB084004A2C23 /* FruiteAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E83CE25A26BDB084004A2C23 /* FruiteAppTests.swift */; };
+		E83CE25B26BDB084004A2C23 /* FruitsAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E83CE25A26BDB084004A2C23 /* FruitsAppTests.swift */; };
 		E83CE26626BDB084004A2C23 /* FruiteAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E83CE26526BDB084004A2C23 /* FruiteAppUITests.swift */; };
 		E83CE29D26BEBCDD004A2C23 /* NetWorkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E83CE29C26BEBCDD004A2C23 /* NetWorkManager.swift */; };
 		E83CE2A426BEBD81004A2C23 /* FruitAPIHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = E83CE2A326BEBD81004A2C23 /* FruitAPIHandler.swift */; };
@@ -29,10 +29,15 @@
 		E83CE2DD26BEC0D0004A2C23 /* UIStoryboardSegue+Destination.swift in Sources */ = {isa = PBXBuildFile; fileRef = E83CE2DC26BEC0D0004A2C23 /* UIStoryboardSegue+Destination.swift */; };
 		E83CE2E226BEC0EB004A2C23 /* MassFormatter+Convinience.swift in Sources */ = {isa = PBXBuildFile; fileRef = E83CE2E126BEC0EB004A2C23 /* MassFormatter+Convinience.swift */; };
 		E83CE2E726BEC0FE004A2C23 /* NumberFormatter+Convinience.swift in Sources */ = {isa = PBXBuildFile; fileRef = E83CE2E626BEC0FE004A2C23 /* NumberFormatter+Convinience.swift */; };
-		E83CE2EC26BEC11E004A2C23 /* Application.swift in Sources */ = {isa = PBXBuildFile; fileRef = E83CE2EB26BEC11E004A2C23 /* Application.swift */; };
+		E83CE2EC26BEC11E004A2C23 /* AppConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = E83CE2EB26BEC11E004A2C23 /* AppConstants.swift */; };
 		E83CE2F126BEC1D0004A2C23 /* FruitTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E83CE2F026BEC1D0004A2C23 /* FruitTableViewCell.swift */; };
 		E83CE2F726BEC25A004A2C23 /* FruitTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E83CE2F626BEC25A004A2C23 /* FruitTableViewController.swift */; };
 		E83CE2FF26BEC274004A2C23 /* FruitDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E83CE2FE26BEC274004A2C23 /* FruitDetailsViewController.swift */; };
+		E83CE31B26BECBEC004A2C23 /* FruitsAPITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E83CE31A26BECBEC004A2C23 /* FruitsAPITests.swift */; };
+		E83CE32026BECC1D004A2C23 /* FruitsAnalyticsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E83CE31F26BECC1D004A2C23 /* FruitsAnalyticsTests.swift */; };
+		E83CE32526BECC99004A2C23 /* FruitsDecoderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E83CE32426BECC99004A2C23 /* FruitsDecoderTests.swift */; };
+		E83CE32A26BECCDF004A2C23 /* FruitsModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E83CE32926BECCDF004A2C23 /* FruitsModelTests.swift */; };
+		E83CE33B26BECD4B004A2C23 /* FruitsDataFormatterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E83CE33A26BECD4B004A2C23 /* FruitsDataFormatterTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,7 +67,7 @@
 		E83CE24F26BDB084004A2C23 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E83CE25126BDB084004A2C23 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E83CE25626BDB084004A2C23 /* FruitAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FruitAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		E83CE25A26BDB084004A2C23 /* FruiteAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FruiteAppTests.swift; sourceTree = "<group>"; };
+		E83CE25A26BDB084004A2C23 /* FruitsAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FruitsAppTests.swift; sourceTree = "<group>"; };
 		E83CE25C26BDB084004A2C23 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E83CE26126BDB084004A2C23 /* FruitAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FruitAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E83CE26526BDB084004A2C23 /* FruiteAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FruiteAppUITests.swift; sourceTree = "<group>"; };
@@ -81,10 +86,15 @@
 		E83CE2DC26BEC0D0004A2C23 /* UIStoryboardSegue+Destination.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIStoryboardSegue+Destination.swift"; sourceTree = "<group>"; };
 		E83CE2E126BEC0EB004A2C23 /* MassFormatter+Convinience.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MassFormatter+Convinience.swift"; sourceTree = "<group>"; };
 		E83CE2E626BEC0FE004A2C23 /* NumberFormatter+Convinience.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NumberFormatter+Convinience.swift"; sourceTree = "<group>"; };
-		E83CE2EB26BEC11E004A2C23 /* Application.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Application.swift; sourceTree = "<group>"; };
+		E83CE2EB26BEC11E004A2C23 /* AppConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppConstants.swift; sourceTree = "<group>"; };
 		E83CE2F026BEC1D0004A2C23 /* FruitTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FruitTableViewCell.swift; sourceTree = "<group>"; };
 		E83CE2F626BEC25A004A2C23 /* FruitTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FruitTableViewController.swift; sourceTree = "<group>"; };
 		E83CE2FE26BEC274004A2C23 /* FruitDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FruitDetailsViewController.swift; sourceTree = "<group>"; };
+		E83CE31A26BECBEC004A2C23 /* FruitsAPITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FruitsAPITests.swift; sourceTree = "<group>"; };
+		E83CE31F26BECC1D004A2C23 /* FruitsAnalyticsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FruitsAnalyticsTests.swift; sourceTree = "<group>"; };
+		E83CE32426BECC99004A2C23 /* FruitsDecoderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FruitsDecoderTests.swift; sourceTree = "<group>"; };
+		E83CE32926BECCDF004A2C23 /* FruitsModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FruitsModelTests.swift; sourceTree = "<group>"; };
+		E83CE33A26BECD4B004A2C23 /* FruitsDataFormatterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FruitsDataFormatterTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -116,7 +126,7 @@
 			isa = PBXGroup;
 			children = (
 				E83CE24226BDB082004A2C23 /* FruitApp */,
-				E83CE25926BDB084004A2C23 /* FruiteAppTests */,
+				E83CE25926BDB084004A2C23 /* FruitAppTests */,
 				E83CE26426BDB084004A2C23 /* FruiteAppUITests */,
 				E83CE24126BDB082004A2C23 /* Products */,
 			);
@@ -151,13 +161,18 @@
 			path = FruitApp;
 			sourceTree = "<group>";
 		};
-		E83CE25926BDB084004A2C23 /* FruiteAppTests */ = {
+		E83CE25926BDB084004A2C23 /* FruitAppTests */ = {
 			isa = PBXGroup;
 			children = (
-				E83CE25A26BDB084004A2C23 /* FruiteAppTests.swift */,
+				E83CE25A26BDB084004A2C23 /* FruitsAppTests.swift */,
 				E83CE25C26BDB084004A2C23 /* Info.plist */,
+				E83CE31A26BECBEC004A2C23 /* FruitsAPITests.swift */,
+				E83CE31F26BECC1D004A2C23 /* FruitsAnalyticsTests.swift */,
+				E83CE32426BECC99004A2C23 /* FruitsDecoderTests.swift */,
+				E83CE32926BECCDF004A2C23 /* FruitsModelTests.swift */,
+				E83CE33A26BECD4B004A2C23 /* FruitsDataFormatterTests.swift */,
 			);
-			path = FruiteAppTests;
+			path = FruitAppTests;
 			sourceTree = "<group>";
 		};
 		E83CE26426BDB084004A2C23 /* FruiteAppUITests */ = {
@@ -173,7 +188,7 @@
 			isa = PBXGroup;
 			children = (
 				E83CE29726BEBA9B004A2C23 /* Extensions */,
-				E83CE2EB26BEC11E004A2C23 /* Application.swift */,
+				E83CE2EB26BEC11E004A2C23 /* AppConstants.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -400,7 +415,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E83CE2EC26BEC11E004A2C23 /* Application.swift in Sources */,
+				E83CE2EC26BEC11E004A2C23 /* AppConstants.swift in Sources */,
 				E83CE2B626BEBED4004A2C23 /* Fruit.swift in Sources */,
 				E83CE2F126BEC1D0004A2C23 /* FruitTableViewCell.swift in Sources */,
 				E83CE2CE26BEC03C004A2C23 /* FruitTableViewControllerDelegate.swift in Sources */,
@@ -428,7 +443,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E83CE25B26BDB084004A2C23 /* FruiteAppTests.swift in Sources */,
+				E83CE25B26BDB084004A2C23 /* FruitsAppTests.swift in Sources */,
+				E83CE32A26BECCDF004A2C23 /* FruitsModelTests.swift in Sources */,
+				E83CE32526BECC99004A2C23 /* FruitsDecoderTests.swift in Sources */,
+				E83CE32026BECC1D004A2C23 /* FruitsAnalyticsTests.swift in Sources */,
+				E83CE31B26BECBEC004A2C23 /* FruitsAPITests.swift in Sources */,
+				E83CE33B26BECD4B004A2C23 /* FruitsDataFormatterTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -633,7 +653,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = FruiteAppTests/Info.plist;
+				INFOPLIST_FILE = FruitAppTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -654,7 +674,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = FruiteAppTests/Info.plist;
+				INFOPLIST_FILE = FruitAppTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

@@ -28,7 +28,7 @@ class FruitDetailsViewController: UIViewController {
     override func viewDidAppear(_ animated: Bool) {
         let property = EventProperty(name: "display", value: "FruitDetails")
         let info = EventProperty(name: "fruit", value: fruit?.type ?? "Unknown")
-        BBCAnalytics.trackEvent(event: .display, metaData: [property, info])
+        FruitAnalytics.trackEvent(event: .display, metaData: [property, info])
     }
     
     override func didReceiveMemoryWarning() {

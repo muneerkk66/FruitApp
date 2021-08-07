@@ -16,7 +16,7 @@ struct FruitsDecoders {
             return decoded
         } catch let e {
             let property = EventProperty(name: "JSONDecoder", value: "\(e.localizedDescription)")
-            BBCAnalytics.trackEvent(event: .error, metaData: [property])
+            FruitAnalytics.trackEvent(event: .error, metaData: [property])
             throw APIError.generic("Invalid JSON \(T.self) \(e.localizedDescription)")
         }
     }

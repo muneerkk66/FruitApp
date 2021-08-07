@@ -6,7 +6,7 @@
 //
 
 import XCTest
-@testable import FruiteApp
+@testable import FruitApp
 
 class FruiteAppTests: XCTestCase {
 

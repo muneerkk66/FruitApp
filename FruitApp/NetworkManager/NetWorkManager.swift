@@ -36,7 +36,7 @@ extension NetworkManager {
                 let ms = timeTakenForRequest * 1000
                 
                 let property = EventProperty(name: "time", value: "\(ms)")
-                BBCAnalytics.trackEvent(event: .load, metaData: [property])
+                FruitAnalytics.trackEvent(event: .load, metaData: [property])
                 
                 let statusCode = (response as? HTTPURLResponse)?.statusCode ?? 200
                 
@@ -44,7 +44,7 @@ extension NetworkManager {
                     let string = String(data: data!, encoding: .utf8)
                     completion(nil, APIError.generic("Server error \(String(describing: string))"))
                     let property = EventProperty(name: "api-stausCode", value: "\(statusCode)")
-                    BBCAnalytics.trackEvent(event: .error, metaData: [property])
+                    FruitAnalytics.trackEvent(event: .error, metaData: [property])
                     return
                 }
                 

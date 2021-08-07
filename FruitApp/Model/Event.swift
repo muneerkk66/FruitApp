@@ -23,7 +23,7 @@ protocol Event {
     var date: Date { get set}
 }
 
-struct BBCAnalyticsEvent: Event, Equatable {
+struct FruitsAnalyticsEvent: Event, Equatable {
     
     // MARK: - vars
     var event: EventType
@@ -31,12 +31,12 @@ struct BBCAnalyticsEvent: Event, Equatable {
     var date: Date
     
     // conform to Equatable
-    static func ==(lhs: BBCAnalyticsEvent, rhs: BBCAnalyticsEvent) -> Bool {
+    static func ==(lhs: FruitsAnalyticsEvent, rhs: FruitsAnalyticsEvent) -> Bool {
         return lhs.event == rhs.event && lhs.date == rhs.date
     }
 }
 
-extension BBCAnalyticsEvent {
+extension FruitsAnalyticsEvent {
     func url(baseURL: URL) -> URL? {
         var urlComponents = URLComponents(url: baseURL, resolvingAgainstBaseURL: true)
         var queryItems = [URLQueryItem]()
